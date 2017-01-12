@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "description": "",
   "main": "index.js",
-  "engines" : {
-    "node" : "4.3.2"
+  "engines": {
+    "node": "4.3.2"
   },
   "scripts": {
     "test": "mocha"
@@ -12,6 +12,7 @@
   "author": "hoto17296",
   "license": "MIT",
   "devDependencies": {
+    "dotenv": "^4.0.0",
     "mocha": "^3.2.0"
   },
   "dependencies": {
