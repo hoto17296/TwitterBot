@@ -11,7 +11,7 @@ const twitter = new Twitter({
 const commands = {
   // 「やったぁあああ！火曜日おわったぁあああ！！土曜日だぁあああ！！」
   tuesday() {
-    Promise.resolve( request.get('https://pbs.twimg.com/media/CvmdygNUIAAPvXX.jpg') )
+    Promise.resolve( request.get( process.env.TUESDAY_IMAGE_URL ) )
       .then((data) => twitter.post('media/upload', { media: data }))
       .then((media) => twitter.post('statuses/update', { status: '', media_ids: media.media_id_string }))
       .then((tweet) => console.log('Tweet Success!', tweet.text))
