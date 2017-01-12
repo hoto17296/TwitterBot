@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "description": "",
   "main": "index.js",
+  "engines" : {
+    "node" : "4.3.2"
+  },
   "scripts": {
     "test": "mocha"
   },
@@ -10,5 +13,9 @@
   "license": "MIT",
   "devDependencies": {
     "mocha": "^3.2.0"
+  },
+  "dependencies": {
+    "request": "^2.79.0",
+    "twitter": "^1.7.0"
   }
 }
